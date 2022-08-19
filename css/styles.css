@@ -70,10 +70,13 @@ body {
 
 /* Header */
 
+.page-header {
+	border-bottom: 1px solid #ececec;
+}
+
 .main-nav {
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid #ececec;
 }
 
 .page-nav,
@@ -152,11 +155,12 @@ body {
 .hero {
 	background-color: var(--accent-background-color);
 	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .hero-title {
 	margin-bottom: 30px;
-	padding-top: 200px;
 	width: 696px;
 	margin-right: auto;
 	margin-left: auto;
@@ -172,7 +176,6 @@ body {
 .button {
 	padding: 10px 32px;
 	min-width: 216px;
-	margin-bottom: 200px;
 
 	background: var(--accent-color);
 	box-shadow: 0px 4px 4px var(--box-shadow-color);
@@ -251,14 +254,13 @@ body {
 }
 
 .work-item {
-	flex-basis: calc(100%-60px/3);
+	flex-basis: calc(100%-60px / 3);
 }
 
 /* team */
 
 .team {
 	background-color: var(--secondary-background-color);
-	
 }
 
 .team .title {
@@ -285,8 +287,8 @@ body {
 }
 
 .cards {
-	flex-basis: calc(100%-90px/4);
-	
+	flex-basis: calc(100%-90px / 4);
+
 	background-color: var(--primary-background-color);
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -314,7 +316,7 @@ body {
 }
 
 .footer-address {
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 .addres {
@@ -393,11 +395,11 @@ body {
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;	
+	gap: 30px;
 }
 
 .portfolio-item {
-	flex-basis: calc(100% / 3 -30px);	
+	flex-basis: calc(100% / 3 -30px);
 }
 
 .portfolio-item .text {
@@ -406,5 +408,7 @@ body {
 
 .portfolio-content {
 	padding: 20px 24px;
-	border: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
 }
