@@ -108,7 +108,7 @@ body {
 }
 
 .contacts {
-	margin-left: 344px;
+	margin-left: auto;
 }
 
 .contacts .link {
@@ -193,6 +193,11 @@ body {
 
 /* Section */
 
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .section-title {
 	margin-bottom: 50px;
 
@@ -205,17 +210,10 @@ body {
 
 /* advantages */
 
-.advantages {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
 .advantages-set {
 	display: flex;
-}
-
-.advantages-item:not(:last-child) {
-	margin-right: 30px;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .advantages-item {
@@ -248,18 +246,19 @@ body {
 
 .work-set {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
-.work-item:not(:last-child) {
-	margin-right: 32px;
+.work-item {
+	flex-basis: calc(100%-60px/3);
 }
 
 /* team */
 
 .team {
 	background-color: var(--secondary-background-color);
-	padding-top: 94px;
-	padding-bottom: 94px;
+	
 }
 
 .team .title {
@@ -272,6 +271,8 @@ body {
 
 .team-set {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .team .text {
@@ -283,11 +284,9 @@ body {
 	letter-spacing: 0.03em;
 }
 
-.cards:not(:last-child) {
-	margin-right: 30px;
-}
-
 .cards {
+	flex-basis: calc(100%-90px/4);
+	
 	background-color: var(--primary-background-color);
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -347,11 +346,6 @@ body {
 
 /* Portfolio */
 
-.portfolio {
-	padding-top: 98px;
-	padding-bottom: 94px;
-}
-
 .next-buttons {
 	padding: 6px 22px;
 
@@ -399,14 +393,11 @@ body {
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -30px;
-	margin-top: -30px;
+	gap: 30px;	
 }
 
 .portfolio-item {
-	flex-basis: calc(100% / 3 -30px);
-	margin-left: 30px;
-	margin-top: 30px;
+	flex-basis: calc(100% / 3 -30px);	
 }
 
 .portfolio-item .text {
